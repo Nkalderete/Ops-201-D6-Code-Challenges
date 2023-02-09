@@ -1,12 +1,8 @@
-
-#!/bin/bash 
-
-
 #!/bin/bash
 
 function login_history() {
-  # Get last login information all users
-  last -a | awk '{print $1, $3, $4, $5}"
+  # Get last login info for all users
+  last -a | awk '{print $1, $3, $4, $5, $6}'
 }
 
 # Call the function to display login history
@@ -14,13 +10,7 @@ login_history
 
 
 
-
-
-
-
-
-
-
+#!/bin/bash 
 
 echo "USER NAME"
 read user
