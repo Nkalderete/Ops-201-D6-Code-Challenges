@@ -2,9 +2,9 @@
 
 function login_history() {
   # Get last login info for all users
-  last -a | awk '{print $1, $3, $4, $5, $6}'
+  last -a
 }
-
+echo $login_history
 # Call the function to display login history
 login_history
 
