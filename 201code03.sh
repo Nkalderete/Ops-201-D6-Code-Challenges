@@ -1,4 +1,27 @@
 
+#!/bin/bash 
+
+
+
+echo "USER NAME : "
+read user
+last $user 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
