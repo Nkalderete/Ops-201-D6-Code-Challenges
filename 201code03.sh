@@ -2,6 +2,25 @@
 #!/bin/bash 
 
 
+#!/bin/bash
+
+function login_history() {
+  # Get the last login information all users
+  last -a | awk '{print $1, $3, $4, $5}'
+}
+
+# Call the function to display login history
+login_history
+
+
+
+
+
+
+
+
+
+
 
 echo "USER NAME : "
 read user
