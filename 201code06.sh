@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # Array-file names
-file_names=("test1.txt" "test2.txt" "test3.txt")
+files=("test1.txt" "test2.txt" "test3.txt")
 
 # Search file names and create any that don't exist
-for filename in "${file_names[@]}"
+for file_name in "${files[@]}"
 do
 # *NOTE*"@""= $@ refers to all of a shell script's command-line arguments
   file_path="./$filename "
