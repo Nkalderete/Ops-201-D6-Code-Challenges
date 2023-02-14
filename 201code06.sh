@@ -17,8 +17,9 @@ do
 
 
     echo "This is a new file." > "$file_path"
-    echo "New file '$file_path' created in dir"
+    echo "New file creadted:"
+    echo "New file '$file_path' created in current  dir"
   else
-    echo "File '$file_path' already exisits in dir"
+    echo "File '$file_path' already exisits in current dir"
   fi
 done
