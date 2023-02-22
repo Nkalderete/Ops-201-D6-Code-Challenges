@@ -1,9 +1,11 @@
 #!/bin/bash
 
 # Ask user for domain name
-read -p "Enter a domain name: " domain
 # domain = variable
 # read keeps user input
+
+read -p "Enter a domain name: " domain
+
 
 
 # Define function run commands
@@ -11,6 +13,7 @@ read -p "Enter a domain name: " domain
 # Second 'echo' writes out at end of command output in .txt file
 # $domain = user input
 # echo "" = added space between lines in output .txt file
+
 function run_commands {
   echo "==== WHOIS OUTPUT ===="
   echo ""
@@ -41,6 +44,7 @@ function run_commands {
 
 # Run function and output results to a text file
 # $domain.txt- ex. google.com.txt
+
 run_commands > $domain.txt
 
 echo "Results saved to -->  $domain.txt"
