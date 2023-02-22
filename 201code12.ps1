@@ -24,6 +24,7 @@ $ipv4addy = Get-IPv4
 $ipv4addy | Out-File -FilePath $FilePath
 Select-String -Path $FilePath -Pattern "IPv4 Address"
 
+Remove-Item $FilePath
 
 
 
@@ -54,4 +55,5 @@ $ipv4addy | Out-File -FilePath $FilePath
 # https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/select-string?view=powershell-7.3&viewFallbackFrom=powershell-7.1
 # https://lazyadmin.nl/powershell/output-to-file/#:~:text=There%20are%20a%20couple%20of,Content%20and%20Add%2DContent%20cmdlet.
 # https://linuxhint.com/create-file-using-powershell/#:~:text=To%20create%20a%20file%20in,created%20file%20will%20be%20placed.
+# https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.management/remove-item?view=powershell-7.3
 
